@@ -1,23 +1,23 @@
-// const playListTreck = [
-//     {
-//       title: 'Aqua Caelestis',
-//       src: "../momentum/assets/sounds/Aqua Caelestis.mp3",
-//       duration: '00:20'
-//     },
-//     {
-//       title: 'Ennio Morricone',
-//       src: '../momentum//assets/sounds/Ennio Morricone.mp3',
-//       duration: '00:20'
-//     },
-//     {
-//       title: 'River Flows In You',
-//       src: "../momentum/assets/sounds/River Flows In You.mp3",
-//       duration: '00:20'
-//     },
-//     {
-//       title: 'Summer Wind',
-//       src: "../momentum/assets/sounds/Summer Wind.mp3",
-//       duration: '00:20'
-//     }
-//   ]
-  // export default playList;
+const playListTreck = [
+  {
+    title: 'ДДТ-Метель',
+    src: "./assets/sounds/ДДТ-Метель.mp3",
+    duration: '00 : 39'
+  },
+  {
+    title: 'КИНО-Красно-желтые дни',
+    src: './assets/sounds/КИНО-Красно-желтые дни.mp3',
+    duration: '01 : 37'
+  },
+  {
+    title: 'Ляпис-Трубецкой-Воины света',
+    src: "./assets/sounds/Ляпис-Трубецкой-Воины света.mp3",
+    duration: '01 : 37'
+  },
+  {
+    title: 'Порнофильмы-Это пройдет',
+    src: "./assets/sounds/Порнофильмы-Это пройдет.mp3",
+    duration: '01 : 50'
+  }
+]
+  export default playListTreck;

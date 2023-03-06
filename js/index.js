@@ -1,5 +1,4 @@
 //---------------------Const---------------------------------
-// import playList from './playList.js';
 
 const date = document.querySelector('.date');
 const time = document.querySelector('.time');
@@ -36,7 +35,7 @@ const volumeBar = document.querySelector('.volume-bar');
 const dateNew = new Date();
 const audio = new Audio();
 const hours = dateNew.getHours();
-const timeOfDay = getTimeOfDay(hours);
+const timeOfDay = getTimeOfDay();
 let bgRandomNum = getRandomNum(1,20);
 let isPlay = false;
 let playNum = 0
@@ -140,14 +139,28 @@ function showGreeting(){
   }
   greeting.textContent = greetingText;
 }
-function getTimeOfDay(hours){
-  let arrTimeOfDay = ['night', 'morning', 'afternoon', 'evening']
-  for(i = 0; i < arrTimeOfDay.length; i++){
-    if(i === Math.floor(hours / 6)){
-      return arrTimeOfDay[i]
-    }
+
+// function getTimeOfDay(){
+//   let arrTimeOfDay = ['night', 'morning', 'afternoon', 'evening']
+//   for(i = 0; i < arrTimeOfDay.length; i++){
+//     if(i === Math.floor(hours / 6)){
+//       return arrTimeOfDay[i]
+//     }
+//   }
+// }
+
+
+function getTimeOfDay(){
+  if (hours >= 6 && hours <= 11) {
+    return "morning";
+  } else if (hours >= 12 && hours <= 17) {
+    return "afternoon";
+  } else if (hours >= 18 && hours <= 23) {
+    return "evening";
+  } else {
+    return "night";
   }
-}
+};
 
 //-------------LocalStorage--------------------------
 function setLocalStorageName() {
@@ -396,29 +409,8 @@ window.addEventListener('load', getQuotes)
 
 
 //---------------audio player---------------------
+import playListTreck from './playList.js';
 
-const playListTreck = [
-  {
-    title: 'ДДТ-Метель',
-    src: "./assets/sounds/ДДТ-Метель.mp3",
-    duration: '00 : 39'
-  },
-  {
-    title: 'КИНО-Красно-желтые дни',
-    src: './assets/sounds/КИНО-Красно-желтые дни.mp3',
-    duration: '01 : 37'
-  },
-  {
-    title: 'Ляпис-Трубецкой-Воины света',
-    src: "./assets/sounds/Ляпис-Трубецкой-Воины света.mp3",
-    duration: '01 : 37'
-  },
-  {
-    title: 'Порнофильмы-Это пройдет',
-    src: "./assets/sounds/Порнофильмы-Это пройдет.mp3",
-    duration: '01 : 50'
-  }
-]
 
 //--Добавляет плейлист
 
