@@ -400,22 +400,22 @@ window.addEventListener('load', getQuotes)
 const playListTreck = [
   {
     title: 'ДДТ-Метель',
-    src: "../momentum//assets/sounds/ДДТ-Метель.mp3",
+    src: "./assets/sounds/ДДТ-Метель.mp3",
     duration: '00 : 39'
   },
   {
     title: 'КИНО-Красно-желтые дни',
-    src: '../momentum//assets/sounds/КИНО-Красно-желтые дни.mp3',
+    src: './assets/sounds/КИНО-Красно-желтые дни.mp3',
     duration: '01 : 37'
   },
   {
     title: 'Ляпис-Трубецкой-Воины света',
-    src: "../momentum/assets/sounds/Ляпис-Трубецкой-Воины света.mp3",
+    src: "./assets/sounds/Ляпис-Трубецкой-Воины света.mp3",
     duration: '01 : 37'
   },
   {
     title: 'Порнофильмы-Это пройдет',
-    src: "../momentum/assets/sounds/Порнофильмы-Это пройдет.mp3",
+    src: "./assets/sounds/Порнофильмы-Это пройдет.mp3",
     duration: '01 : 50'
   }
 ]
