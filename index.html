@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="assets/favicon.ico" rel="shortcut icon" />
+  <link rel="stylesheet" href="css/owfont-regular.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Chivo+Mono:wght@700&family=Kanit:wght@700&family=Libre+Baskerville&family=Montserrat&display=swap" rel="stylesheet">
+  <title>momentum</title>
+</head>
+<body>
+  <header class="header">
+    <div class="player">
+      <div class="player__info">Aqua Caelestis</div>
+      <input class="progress-bar" type="range" value="0">
+      <div class="player__time">
+        <span class="current">0 : 00</span>
+        <span class="duration"></span>
+      </div>
+      <div class="volume">
+        <div class="volume-icon_play"></div>
+        <input class="volume-bar" type="range" min="0" max="10" value="10">
+      </div>
+      <div class="player__controls">
+        <button class="play-prev player-icon"></button>
+        <button class="play player-icon"></button>
+        <button class="play-next player-icon"></button>
+      </div>
+      <ul class="play-list">
+      </ul>
+    </div>
+    <div class="weather">
+      <input type="text" class="city" placeholder="[Enter city]"/>
+      <i class="weather-icon owf"></i>
+      <div class="weather-error"></div>
+      <div class="description-container">
+        <span class="temperature"></span>
+        <span class="weather-description"></span>
+      </div>
+      <div class="wind"></div>
+      <div class="humidity"></div>
+    </div>
+  </header>
+  <main class="main">
+    <div class="slider-icons">
+      <button class="slide-prev slider-icon"></button>
+      <button class="slide-next slider-icon"></button>
+    </div>
+    <time class="time"></time>
+    <date class="date"></date>
+    <div class="greeting-container">
+      <span class="greeting"></span>
+      <input type="text" class="name-enter" placeholder="[Enter name]"/>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="footer__quote">
+      <button class="change-quote"></button>
+      <div class="quote"></div>
+      <div class="author"></div>
+    </div>
+    <div class="footer__content">
+      <div class="setting">
+        <div class="setting__btn"></div>
+        <div class="popup">
+          <div class="popup__container">
+            <div class="popup__close"></div>
+            <div class="popup__title">Setting</div>
+            <div class="popup__block language">
+              <div id="subtitle-languare" class="popup__subtitle">Language</div>
+              <div class="language__setting">
+                <div class="language__box">
+                  <input class="btn-setting" type="radio" name="language" id="en-btn" checked>
+                  <label id="satting-name_en" class="satting-name" for="text">En</label>
+                </div>
+                <div class="language__box">
+                  <input class="btn-setting" type="radio" name="language" id="ru-btn">
+                  <label id="satting-name_ru" class="satting-name" for="text">Ru</label>
+                </div>
+              </div>
+            </div>
+            <div class="popup__block source">
+              <div id="subtitle-source" class="popup__subtitle">Source</div>
+              <div class="source__setting">
+                <div class="source__box">
+                  <input class="btn-setting" type="radio" name="source" id="github-btn" checked>
+                  <label id="satting-name_github" class="satting-name" for="text">GitHub</label>
+                </div>
+                <div class="source__box">
+                  <input class="btn-setting" type="radio" name="source" id="unsplash-btn">
+                  <label id="satting-name_unsplash" class="satting-name" for="text">Unsplash API</label>
+                </div>
+                <div class="source__box">
+                  <input class="btn-setting" type="radio" name="source" id="flickr-btn">
+                  <label id="satting-name_flickr" class="satting-name" for="text">Flickr API</label>
+                </div>
+              </div>
+              <input type="text" class="source__enter" placeholder="[Enter tag]">
+            </div>
+            <div class="popup__block visible">
+              <div id="subtitle-visible" class="popup__subtitle">Visible blocks</div>
+              <div class="visible__setting-wrapper">
+                <div class="visible__setting">
+                  <div class="visible__box">
+                    <input id="time-btn" class="btn-setting" type="checkbox" name="visible"  checked>
+                    <label id="satting-name_time" class="satting-name" for="text">Time</label>
+                  </div>
+                  <div class="visible__box">
+                    <input id="date-btn" class="btn-setting" type="checkbox" name="visible"  checked>
+                    <label id="satting-name_date" class="satting-name" for="text">Date</label>
+                  </div>
+                  <div class="visible__box">
+                    <input id="greetings-btn" class="btn-setting" type="checkbox" name="visible"  checked>
+                    <label id="satting-name_greetings" class="satting-name" for="text">Greeting</label>
+                  </div>
+                  <div class="visible__box">
+                    <input id="quote-btn" class="btn-setting" type="checkbox" name="visible"  checked>
+                    <label id="satting-name_quote" class="satting-name" for="text">Quote</label>
+                  </div>
+                </div>
+                <div class="visible__setting">
+                  <div class="visible__box">
+                    <input id="weather-btn" class="btn-setting" type="checkbox" name="visible"  checked>
+                    <label id="satting-name_weather" class="satting-name" for="text">Weather</label>
+                  </div>
+                  <div class="visible__box">
+                    <input id="player-btn" class="btn-setting" type="checkbox" name="visible"  checked>
+                    <label id="satting-name_player" class="satting-name" for="text">Player</label>
+                  </div>
+                  <div class="visible__box">
+                    <input id="todo-btn" class="btn-setting" type="checkbox" name="visible"  checked>
+                    <label id="satting-name_todo" class="satting-name" for="text">Todo List</label>
+                  </div>
+                  <div class="visible__box">
+                    <input id="rss-btn" class="btn-setting" type="checkbox" name="visible"  checked>
+                    <label id="satting-name_rss" class="satting-name" for="text">RS school</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__date"><a class="footer__date-link" href="https://github.com/MishaKozarev">Misha Kozarev, 2023</a></div>
+      <div class="footer__rss">
+        <a class="footer__link" href="https://rs.school/js-stage0/"><img src="../momentum/assets/svg/rs_school_js.svg" width="100" height="70" alt="icon">
+        </a>
+      </div>
+      <div class="todo-list">
+        <div class="todo-list__icon"></div>
+        <div class="todo-list__body">
+          <div class="todo-list__container">
+            <div class="todo-list__close"></div>
+            <div class="todo-list__title">To Do List</div>
+            <div class="todo-list__imput-wrapper">
+              <input class="todo-list__input" type="text">
+              <button class="todo-list__btn">add</button>
+            </div>
+            <ul class="todo-list__ul">
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src='js/index.js'></script>
+  <script src='js/playList.js'></script>
+</body>
+</html>

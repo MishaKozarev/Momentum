@@ -1,0 +1,65 @@
+[
+    {
+    "text": "Программирование сегодня — это гонка разработчиков программ, стремящихся писать программы .",
+    "author": "Рик Кук",
+    "texten": "Programming today is a race of software developers to write programs.",
+    "authoren": "Rick Cook"
+    },
+    {
+    "text": "Низкоуровневый язык — это когда требуется внимание к вещам, которые никак не связаны с программами.",
+    "author": "Валди Раверс",
+    "texten": "A low-level language is when attention is required to things that have nothing to do with programs.",
+    "authoren": "Waldi Ravens"
+    },
+    {
+    "text": "Учиться программированию никогда не поздно",
+    "author": "Миша Козарев (36 лет) начинающий фронтенд разработчик",
+    "texten": "It's never too late to learn programming.",
+    "authoren": "Misha Kozarev (36 years) beginning front-end developer"
+     },
+    {
+    "text": "Не волнуйтесь, если что-то не работает. Если бы всё работало, вас бы уволили.",
+    "author": "Мошер Лов Программная инженерия",
+    "texten": "Don't worry if something doesn't work. If everything worked, you would be fired.",
+    "authoren": "Moshers Law of Software Engineering"
+    },
+    {
+    "text": "В хорошем дизайне добавление чего-то стоит дешевле, чем сама эта вещь.",
+    "author": "Томас С.Гал",
+    "texten": "In good design, adding something costs less than the thing itself.",
+    "authoren": "Thomas C. Gale"
+    },
+    {
+    "text": "В теории, теория и практика неразделимы. На практике это не так.",
+    "author": "Югги Берра",
+    "texten": "In theory, theory and practice are inseparable. In practice this is not the case.",
+    "authoren": "Yoggi Berra"
+    },
+    {
+    "text": "Perl — это тот язык, который одинаково выглядит как до, так и после RSA шифрования.",
+    "author": "Кейт Бостинг",
+    "texten": "Perl is the language that looks the same before and after RSA encryption.",
+    "authoren": "Keith Bostic"
+    },
+    {
+    "text": "Я изобрел понятие «объектно-ориентированный», и могу заявить, что не имел в виду C++.",
+    "author": "Алан Кей",
+    "texten": "I invented the concept of 'object - oriented', and I can say that I did not mean C ++.",
+    "authoren": "Alan Kay"
+    },
+    {
+    "text": "Иногда лучше остаться спать дома в понедельник, чем провести всю неделю в отладке написанного.",
+    "author": "Кристофер Томсон",
+    "texten": "Sometimes it's better to stay home on Monday than to spend the whole week debugging code written.",
+    "authoren": "Christopher Thompson"
+    },
+    {
+    "text": "Измерять продуктивность программиста подсчетом строк кода — это так же, как оценивать постройку.",
+    "author": "Билл Гейтс",
+    "texten": "Measuring a programmer's productivity by counting lines of code is like judging a building.",
+    "authoren": "Bill Gates"
+    }
+  ]
+
+
+
